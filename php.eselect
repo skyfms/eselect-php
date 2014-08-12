@@ -139,7 +139,7 @@ find_targets_cgi() {
 }
 
 get_active_cli() {
-	readlink -e "${EROOT}"/usr/bin/php | sed -ne "s:.*/usr/.*/\(php[0-9]\.[0-9][0-9]*\)/bin/php:\1:p"
+	readlink -e "${EROOT}"/usr/bin/php | sed -ne "s:.*/usr/.*/\(php[0-9]\.[0-9].*\)/bin/php:\1:p"
 }
 
 get_active_cgi() {
